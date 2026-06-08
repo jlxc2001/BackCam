@@ -1,14 +1,21 @@
-plugins { id 'com.android.application' }
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    namespace 'com.jlxc.rearcameraprobe'
+    namespace 'com.jlxc.backcamprobe'
     compileSdk 35
 
     defaultConfig {
-        applicationId 'com.jlxc.rearcameraprobe'
+        applicationId 'com.jlxc.backcamprobe'
         minSdk 23
-        targetSdk 35
+        targetSdk 29
         versionCode 1
-        versionName '1.0'
+        versionName '0.1-demo'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
